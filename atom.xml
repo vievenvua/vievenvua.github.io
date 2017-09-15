@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>谢文华</title>
+  <subtitle>不喜小圈子,喜大世界</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yipingmi.me/"/>
+  <updated>2017-09-09T06:06:57.866Z</updated>
+  <id>http://yipingmi.me/</id>
+  
+  <author>
+    <name>谢文华</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows重装系统时,磁盘转换转换为GPT磁盘</title>
+    <link href="http://yipingmi.me/Windows%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%97%B6-%E7%A3%81%E7%9B%98%E8%BD%AC%E6%8D%A2%E8%BD%AC%E6%8D%A2%E4%B8%BAGPT%E7%A3%81%E7%9B%98/"/>
+    <id>http://yipingmi.me/Windows重装系统时-磁盘转换转换为GPT磁盘/</id>
+    <published>2017-09-09T06:01:42.000Z</published>
+    <updated>2017-09-09T06:06:57.866Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1>Windows重装系统时,弹窗提示<br><code>Windows无法安装到这个磁盘，选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘</code></li>
+<li><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1>在磁盘分区的界面下(事实上,我试过不止这个界面可以,其他界面也许可以,可以自己试试),<code>shirt</code>+<code>F10</code>打开命令行依次键入(<code>#</code>后面为注释)<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">diskpart</div><div class="line">list disk</div><div class="line">select disk 0</div><div class="line">clean</div><div class="line">convert gpt</div><div class="line">list partition</div><div class="line">create partition efi size=100</div><div class="line">create partition msr size=128</div><div class="line">create partition primary size size=102400 #C盘大小,我一般设置为102400(即100G)</div><div class="line">exit</div><div class="line">exit</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>回到磁盘分区界面<code>刷新</code>,稍等片刻,之后就可以正常选择系统安装的分区了.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;Windows重装系统时,弹窗提示&lt;br&gt;&lt;code&gt;Windows无法安装到这个磁盘，选中的磁盘具有MBR分区表。在EFI系统
+    
+    </summary>
+    
+    
+      <category term="windows" scheme="http://yipingmi.me/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 上一些很有用的功能和快捷键</title>
+    <link href="http://yipingmi.me/Windows-%E4%B8%8A%E4%B8%80%E4%BA%9B%E5%BE%88%E6%9C%89%E7%94%A8%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8C%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://yipingmi.me/Windows-上一些很有用的功能和快捷键/</id>
+    <published>2017-09-02T14:37:47.000Z</published>
+    <updated>2017-09-02T14:39:45.349Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><h1 id="Windows-G-Windows-系统自带的录屏"><a href="#Windows-G-Windows-系统自带的录屏" class="headerlink" title="Windows + G (Windows 系统自带的录屏)"></a>Windows + G (Windows 系统自带的录屏)</h1><p><img src="https://i.loli.net/2017/09/02/59aac23e9ddd1.jpg" alt="Windows录屏.jpg"></p>
+</li>
+<li><h1 id="步骤记录器"><a href="#步骤记录器" class="headerlink" title="步骤记录器"></a>步骤记录器</h1><p>Win+R在运行中输入<code>psr</code>回车即可调出Windows步骤记录器<br><img src="https://i.loli.net/2017/09/02/59aac23eae5c3.jpg" alt="Windows步骤记录器.jpg"></p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;Windows-G-Windows-系统自带的录屏&quot;&gt;&lt;a href=&quot;#Windows-G-Windows-系统自带的录屏&quot; class=&quot;headerlink&quot; title=&quot;Windows + G (Windows 系统自带的录屏)&quot;&gt;&lt;/
+    
+    </summary>
+    
+    
+      <category term="windows" scheme="http://yipingmi.me/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 博客常用命令</title>
+    <link href="http://yipingmi.me/hexo-%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yipingmi.me/hexo-博客常用命令/</id>
+    <published>2017-08-29T11:35:25.000Z</published>
+    <updated>2017-08-29T11:47:26.737Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>发现自己太久没有发布博客后,基本的命令还是会忘记</p>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo s                 # 启用本地服务器,我比较习惯写博客的时候固定开一个 git bash 窗口挂着</div><div class="line">hexo new &lt;title&gt;       # 创建新博客</div><div class="line">hexo new draft &lt;title&gt; # 创建草稿</div><div class="line">hexo publish &lt;title&gt;   # 发布草稿</div><div class="line">hexo publish .         # 也是发布草稿,可以省略title,我更喜欢用这个</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;发现自己太久没有发布博客后,基本的命令还是会忘记&lt;/p&gt;
+&lt;h1 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;head
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客next主题添加启用统计阅读次数及访问量</title>
+    <link href="http://yipingmi.me/hexo%E5%8D%9A%E5%AE%A2next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%90%AF%E7%94%A8%E7%BB%9F%E8%AE%A1%E9%98%85%E8%AF%BB%E6%AC%A1%E6%95%B0%E5%8F%8A%E8%AE%BF%E9%97%AE%E9%87%8F/"/>
+    <id>http://yipingmi.me/hexo博客next主题添加启用统计阅读次数及访问量/</id>
+    <published>2017-08-29T11:15:54.000Z</published>
+    <updated>2017-08-29T11:34:28.714Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考:<a href="https://lannly.github.io/2016/11/11/hexo-next%E4%B8%BB%E9%A2%98-%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E6%AC%A1%E6%95%B0%EF%BC%8C%E8%AE%BF%E9%97%AE%E9%87%8F%E7%AD%89/" target="_blank" rel="external">Hexo+Next主题 文章添加阅读次数，访问量等</a><br>编辑主题配置文件<code>-config.yml</code>,我用的是next主题,其他主题的我也不知道.需要修改的地方我在行末加注释,编辑后如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">busuanzi_count:</div><div class="line">  # count values only if the other configs are false</div><div class="line">  enable: true                                         #&quot;false&quot;改为&quot;true&quot;</div><div class="line">  # custom uv span for the whole site</div><div class="line">  site_uv: true </div><div class="line">  site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; 访问人数   #添加&quot;访问人数&quot;</div><div class="line">  site_uv_footer: </div><div class="line">  # custom pv span for the whole site</div><div class="line">  site_pv: true</div><div class="line">  site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 总访问量    #添加&quot;总访问量&quot;</div><div class="line">  site_pv_footer: 次                                   #添加&quot;次&quot;</div><div class="line">  # custom pv span for one page only</div><div class="line">  page_pv: true</div><div class="line">  page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; 浏览     #添加&quot;浏览&quot;</div><div class="line">  page_pv_footer: 次                                    #添加&quot;次&quot;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考:&lt;a href=&quot;https://lannly.github.io/2016/11/11/hexo-next%E4%B8%BB%E9%A2%98-%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E6%AC%
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客添加RSS</title>
+    <link href="http://yipingmi.me/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0RSS/"/>
+    <id>http://yipingmi.me/Hexo博客添加RSS/</id>
+    <published>2017-08-21T05:14:08.000Z</published>
+    <updated>2017-08-21T06:01:32.955Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2017/08/21/599a6e386a6a3.png" alt="rss-40674_1280.png"></p>
+<h1 id="1-安装hexo-generator-feed"><a href="#1-安装hexo-generator-feed" class="headerlink" title="1.安装hexo-generator-feed"></a>1.安装<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a></h1><p><code>npm install hexo-generator-feed --save</code></p>
+<h1 id="2-配置站点配置文件"><a href="#2-配置站点配置文件" class="headerlink" title="2.配置站点配置文件"></a>2.配置站点配置文件</h1><p>在<code>_config.yml</code>中另起新行并添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">  type: atom</div><div class="line">  path: atom.xml</div><div class="line">  limit: 20</div></pre></td></tr></table></figure></p>
+<p>然后，重新部署一下网站就可以了。效果如图<br><img src="https://i.loli.net/2017/08/21/599a7518b83f3.jpg" alt="20170821_135003.jpg"></p>
+<p>我用的是<code>next</code>主题,亲测并不需要再配置其他文件，其他主题的我就不知道了。</p>
+<h1 id="3-填坑"><a href="#3-填坑" class="headerlink" title="3.填坑"></a>3.填坑</h1><p>发现订阅后，打开网站时的网址是<code>yourstie.com</code>,才知道站点配置文件<code>_config.yml</code>中的<code>url</code>原来是这样用的,修改回来就可以了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/08/21/599a6e386a6a3.png&quot; alt=&quot;rss-40674_1280.png&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;1-安装hexo-generator-feed&quot;&gt;&lt;a href=&quot;#1-安装h
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github Page 博客绑定namecheap独立域名</title>
+    <link href="http://yipingmi.me/Github-Page-%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9Anamecheap%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D/"/>
+    <id>http://yipingmi.me/Github-Page-博客绑定namecheap独立域名/</id>
+    <published>2017-08-21T04:09:52.000Z</published>
+    <updated>2017-08-21T06:01:36.649Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2017/08/21/599a618985c41.jpg" alt="56ccc36160376979714968.jpg"></p>
+<p>参考：<a href="https://webmasters.stackexchange.com/questions/105698/github-page-custom-domain-www-is-redirected-to-https" target="_blank" rel="external">GitHub Page Custom Domain - www is redirected to https</a></p>
+<h1 id="1-在namecheap上设置为"><a href="#1-在namecheap上设置为" class="headerlink" title="1.在namecheap上设置为"></a>1.在<a href="https://www.namecheap.com/" target="_blank" rel="external">namecheap</a>上设置为</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">A Record</th>
+<th style="text-align:center">@</th>
+<th style="text-align:center">192.30.252.153</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A Record</td>
+<td style="text-align:center">@</td>
+<td style="text-align:center">192.30.252.154</td>
+</tr>
+<tr>
+<td style="text-align:center">CNAME Record</td>
+<td style="text-align:center">www</td>
+<td style="text-align:center">username.github.io</td>
+</tr>
+</tbody>
+</table>
+<p>以上除了<code>username</code>其他的都可以不改变，至于网上有人说需要<code>ping</code>IP的，我没有试过这样，亲测可行。</p>
+<h1 id="2-在本地设置"><a href="#2-在本地设置" class="headerlink" title="2.在本地设置"></a>2.在本地设置</h1><p>在<code>soruce</code>新建文件<code>CNAME</code>,必须是大写。打开文件输入<code>username.github.io</code>，保存。<br>然后想往常一样重新部署一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>然后去冲杯咖啡，回来就可以用独立域名访问你的网站了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/08/21/599a618985c41.jpg&quot; alt=&quot;56ccc36160376979714968.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&quot;https://webmasters.stacke
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈我对博客的理解</title>
+    <link href="http://yipingmi.me/%E8%B0%88%E8%B0%88%E6%88%91%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>http://yipingmi.me/谈谈我对博客的理解/</id>
+    <published>2017-08-20T17:02:59.000Z</published>
+    <updated>2017-08-21T03:42:41.097Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2017/08/21/5999dce4b4698.jpg" alt="footprint-1148993_1920.jpg"></p>
+<blockquote>
+<p>喜欢写博客的人，会经历三个阶段。<br>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间写。<br>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。<br>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
+</blockquote>
+<p><strong>不记得从什么时候开始，自己就想拥有一个可以永久的个人博客，就像可以一辈子舒服的呆着的家，不一定要多漂亮，但足够安稳。</strong></p>
+<h1 id="如今的独立博客"><a href="#如今的独立博客" class="headerlink" title="如今的独立博客"></a>如今的独立博客</h1><p>虽然如今的博客是部署在Github Pages上，不是自己的空间，也只能是静态博客，并不是真正的独立。但对于我来说，在可预见的将来，他足够的安稳，这样已经够了。</p>
+<p>即使以后想迁移，也是非常轻松。</p>
+<p>以下说一下我能预期感受到的独立博客的最大的两个优点</p>
+<ul>
+<li><h3 id="自由"><a href="#自由" class="headerlink" title="自由"></a>自由</h3><img src="https://i.loli.net/2017/08/21/5999d70edf055.jpg" alt="sea-1993791_1920.jpg"></li>
+</ul>
+<p>自由真的是非常大的优点。字数不限，形式不限，发图片发视频发音乐随意，主题任意换，可以和来自五湖四海的网友交流交流等等。</p>
+<ul>
+<li><h3 id="避免时间主动碎片化"><a href="#避免时间主动碎片化" class="headerlink" title="避免时间主动碎片化"></a>避免时间主动碎片化</h3></li>
+</ul>
+<p>想想以前发完一条动态，自己就满怀期待等着好友前来评论留赞。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/08/21/5999dce4b4698.jpg&quot; alt=&quot;footprint-1148993_1920.jpg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;喜欢写博客的人，会经历三个阶段。&lt;br&gt;第一阶段
+    
+    </summary>
+    
+      <category term="发牢骚" scheme="http://yipingmi.me/categories/%E5%8F%91%E7%89%A2%E9%AA%9A/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="IM" scheme="http://yipingmi.me/tags/IM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Markdown遇到的一些问题以及解决方法</title>
+    <link href="http://yipingmi.me/%E4%BD%BF%E7%94%A8Markdown%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://yipingmi.me/使用Markdown遇到的一些问题以及解决方法/</id>
+    <published>2017-08-20T08:29:56.000Z</published>
+    <updated>2017-08-20T09:52:07.578Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2017/08/20/59995b4046d53.png" alt="1200px-Markdown-mark.svg1_.png"></p>
+<ul>
+<li><h1 id="Miu"><a href="#Miu" class="headerlink" title="Miu"></a><a href="http://www.appinn.com/miu-markdown-editor/" target="_blank" rel="external">Miu</a></h1><p>很多网友都说</p>
+<blockquote>
+<p>小众推荐，必属精品</p>
+</blockquote>
+<p>  于是我就用了。但是用了几天后，我才发现博客标题未命名的问题的原因竟然是Miu。下面复现这个问题新生成一篇测试博客，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: test</div><div class="line">date: 2017-08-20 16:44:54</div><div class="line">update: 2017-08-20 16:44:54</div><div class="line">categories:</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>  这时候网页还是正常的。但是用Miu打开并保存后，再次打开，内容已经变成下面这样了（本来想直接用代码块的，但是转义问题没有解决说以只能贴图了，以后再补一补markdown的转义语法）<img src="https://i.loli.net/2017/08/20/5999546edfb75.jpg" alt="20170820_171832.jpg"><br>  竟然自己修改了内容，所以网页显示”未命名”的原因就不用再说了。（再此声明一下，可能是我不会使用Miu，所以误以为是Miu的问题，并没有黑Miu的意思）</p>
+</li>
+<li><h1 id="MarkdownPad2"><a href="#MarkdownPad2" class="headerlink" title="MarkdownPad2"></a><a href="http://markdownpad.com/,&quot;MarkdownPad官网&quot;" target="_blank" rel="external">MarkdownPad2</a></h1>很多网友都表示这个是Windows上最好用的Markdown编辑器。现在这篇博客我也是用这个来编辑的，但是用的时候也遇到了一个问题<img src="https://i.loli.net/2017/08/20/599958f1c69a9.png" alt="4zMObXk.png"><br>官方也给出了<a href="http://markdownpad.com/faq.html" target="_blank" rel="external">解决方案</a>,我安装了官方给出的<a href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe" target="_blank" rel="external">Awesomium 1.6.6 SDK</a>并重新打开MarkdownPad2后也顺利解决了。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/08/20/59995b4046d53.png&quot; alt=&quot;1200px-Markdown-mark.svg1_.png&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;Miu&quot;&gt;&lt;a href=&quot;#Miu&quot;
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="markdown" scheme="http://yipingmi.me/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 给博客添加标签及分类</title>
+    <link href="http://yipingmi.me/Hexo-%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%88%86%E7%B1%BB/"/>
+    <id>http://yipingmi.me/Hexo-给博客添加标签及分类/</id>
+    <published>2017-08-20T06:12:03.000Z</published>
+    <updated>2017-08-20T08:15:41.816Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2017/08/20/59993e1409f72.jpg" alt="Hexo给博客添加标签及分类.jpg"><br>参考：<a href="http://whx4j8.github.io/2016/03/16/hexo-next-%E6%B7%BB%E5%8A%A0%E4%B8%BA%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB/" target="_blank" rel="external">hexo next 为文章添加分类</a></p>
+<ul>
+<li><h1 id="hexo-添加标签"><a href="#hexo-添加标签" class="headerlink" title="hexo 添加标签"></a>hexo 添加标签</h1><p>1.刚部署完hexo博客的时候，在博客菜单栏虽然显示有标签，但是实际还是需要自己新建一个页面的<br><code>hexo new page categories</code><br>2.执行完上一行命令会在source文件夹里生成<code>tags</code>文件夹，编辑里面的文件，添加一行<code>type: &quot;tags&quot;</code>,得到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: tags</div><div class="line">date: 2017-08-20 14:05:32</div><div class="line">type: &quot;tags&quot;</div><div class="line">---</div></pre></td></tr></table></figure>
+</li>
+<li><h1 id="hexo-添加分类"><a href="#hexo-添加分类" class="headerlink" title="hexo 添加分类"></a>hexo 添加分类</h1><p>添加分类的步骤和添加tags的步骤基本一样，就不再赘述。在此需要注意的是，需要在Front-matter中添加一行<br><code>categories:</code></p>
+</li>
+<li><h1 id="添加标签和分类是需要注意的小问题"><a href="#添加标签和分类是需要注意的小问题" class="headerlink" title="添加标签和分类是需要注意的小问题"></a>添加标签和分类是需要注意的小问题</h1><pre>categories:<br>- 分类1<br>tags:<br>- 标签1<br>- 标签2</pre><br>减号<code>-</code>后面必须留空格，我自己在这个坑里坑了好久没出来。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/08/20/59993e1409f72.jpg&quot; alt=&quot;Hexo给博客添加标签及分类.jpg&quot;&gt;&lt;br&gt;参考：&lt;a href=&quot;http://whx4j8.github.io/2016/03/16/he
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【博客】系列简介</title>
+    <link href="http://yipingmi.me/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E7%B3%BB%E5%88%97%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yipingmi.me/【博客】系列简介/</id>
+    <published>2017-08-20T05:37:52.000Z</published>
+    <updated>2017-08-20T08:16:22.047Z</updated>
+    
+    <content type="html"><![CDATA[<p>本系列主要用来记录一下自己博客的功能结构等方面的变化，另一方面也可以给自己锻炼一下写博客的能力。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本系列主要用来记录一下自己博客的功能结构等方面的变化，另一方面也可以给自己锻炼一下写博客的能力。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
