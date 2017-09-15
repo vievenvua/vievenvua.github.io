@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yipingmi.me/"/>
-  <updated>2017-09-09T06:06:57.866Z</updated>
+  <updated>2017-09-15T18:06:35.222Z</updated>
   <id>http://yipingmi.me/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 重装系统后应该做的事</title>
+    <link href="http://yipingmi.me/Ubuntu-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%E5%BA%94%E8%AF%A5%E5%81%9A%E7%9A%84%E4%BA%8B/"/>
+    <id>http://yipingmi.me/Ubuntu-重装系统后应该做的事/</id>
+    <published>2017-09-15T17:57:51.000Z</published>
+    <updated>2017-09-15T18:06:35.222Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">curl ip.gs  #查看ip</div><div class="line">http_proxy=http://localhost:8123 curl ip.gs  #查看代理ip</div><div class="line">hp curl ip.gs  #同上，查看代理ip</div><div class="line">source ~/.bashrc  #启用终端代理</div><div class="line">export http_proxy=http://localhost:8123  #为当前会话启用全局代理</div><div class="line">unset http_proxy  #取消当前会话代理</div><div class="line">gsettings set com.canonical.Unity.Launcher launcher-position Bottom  #启动器底栏sudo add-apt-repository ppa:atareao/telegram  #1</div><div class="line">sudo apt-get update  #2</div><div class="line">sudo apt-get install telegram  #安装telegram</div><div class="line">sudo apt-get install chromium-brower  #安装chromium</div><div class="line">dpkg –i  #安装deb</div><div class="line">tar -Jxf  #解压tar.xz</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://yipingmi.me/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows重装系统时,磁盘转换转换为GPT磁盘</title>
