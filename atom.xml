@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yipingmi.me/"/>
-  <updated>2017-09-16T02:18:56.844Z</updated>
+  <updated>2017-09-16T02:35:35.964Z</updated>
   <id>http://yipingmi.me/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://yipingmi.me/%E8%AE%BE%E7%BD%AEUbuntu%E7%9A%84grub%E7%AD%89%E5%BE%85%E6%97%B6%E9%97%B4/"/>
     <id>http://yipingmi.me/设置Ubuntu的grub等待时间/</id>
     <published>2017-09-16T01:51:52.000Z</published>
-    <updated>2017-09-16T02:18:56.844Z</updated>
+    <updated>2017-09-16T02:35:35.964Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1>安装了双系统（Windows 10 +Ubuntu 16.04）后，Ubuntu自带了一个Gurb，用于选择系统Windows 10 或Ubuntu 16.04）启动。默认10秒没有操作才会自动选择Ubuntu启动，对于很多同学来说，10秒太长了。</li>
 <li><h1 id="设置grub等待时间"><a href="#设置grub等待时间" class="headerlink" title="设置grub等待时间"></a>设置grub等待时间</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim  /etc/default/grub</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>打开后是下面这样的<br><img src="https://i.loli.net/2017/09/16/59bc84340ffdc.png" alt="grub_timeout.png"><br>找到并修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GRUB_TIMEOUT=1  #默认是10，可以按照自己的设定，我这里修改为1。</div></pre></td></tr></table></figure></p>
+<p>打开后是下面这样的<br><img src="https://i.loli.net/2017/09/16/59bc84340ffdc.png" alt="grub_timeout.png"><br>找到并修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GRUB_TIMEOUT=1  #默认是10，可以按照自己的设定，我这里修改为1</div></pre></td></tr></table></figure></p>
 <p>然后使修改生效<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-grub</div></pre></td></tr></table></figure></p>
 <p> <img src="https://i.loli.net/2017/09/16/59bc88f7a039c.png" alt="update-grub.png"><br> 然后下次开机的时候，留意一下，是不是等待时间已经变了。<br> 搞定！</p>
 ]]></content>
