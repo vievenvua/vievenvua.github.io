@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yipingmi.me/"/>
-  <updated>2017-09-16T02:35:35.964Z</updated>
+  <updated>2017-09-16T06:05:51.838Z</updated>
   <id>http://yipingmi.me/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Ubuntu下hexo无法完成部署卡住不弹出github</title>
+    <link href="http://yipingmi.me/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bhexo%E6%97%A0%E6%B3%95%E5%AE%8C%E6%88%90%E9%83%A8%E7%BD%B2%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%BC%B9%E5%87%BAgithub/"/>
+    <id>http://yipingmi.me/解决Ubuntu下hexo无法完成部署卡住不弹出github/</id>
+    <published>2017-09-16T05:34:26.000Z</published>
+    <updated>2017-09-16T06:05:51.838Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1>在出现这个问题之前，我已经发布了<a href="http://yipingmi.me/Ubuntu-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%90%8E%E5%BA%94%E8%AF%A5%E5%81%9A%E7%9A%84%E4%BA%8B/">一篇博客</a>.同样是Ubuntu16.04，第二天却不能发布了。<br>我再次的输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>提示<code>无文件要提交，干净的工作区</code><br><img src="https://ooo.0o0.ooo/2017/09/16/59bcbb23e8863.png" alt="13_1.png"></p>
+<p>并且一直卡住在这里</p>
+<ul>
+<li><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1>上图中我是故意把后面的代理截图的，因为就是手动代理的影响。只要把手动代理设置回自动代理，并且重新打开终端（必须重新打开终端）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="https://ooo.0o0.ooo/2017/09/16/59bcbb23e5da2.png" alt="13_2.png"><br>这样就可以解决了。</p>
+<ul>
+<li><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1>需要说明的是，这个问题的原因不一定和我上面说的一样。有的网友是因为SSH-KEY的问题，还有的是因为站点配置文件<mark>_config.yml</mark>里面的git名称什么的问题等等，需要根据自己的具体情况逐个排查.</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;在出现这个问题之前，我已经发布了&lt;a href=&quot;http://yipingmi.me/Ubuntu-%E9%87%8D%E8%
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="ubuntu" scheme="http://yipingmi.me/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>设置Ubuntu的grub等待时间</title>
