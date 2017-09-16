@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yipingmi.me/"/>
-  <updated>2017-09-16T02:57:11.526Z</updated>
+  <updated>2017-09-16T02:35:35.964Z</updated>
   <id>http://yipingmi.me/</id>
   
   <author>
@@ -14,20 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://yipingmi.me/test/"/>
-    <id>http://yipingmi.me/test/</id>
-    <published>2017-09-16T02:57:11.000Z</published>
-    <updated>2017-09-16T02:57:11.526Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>设置Ubuntu的grub等待时间</title>
