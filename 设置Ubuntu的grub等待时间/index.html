@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="blog,hexo," />
+  <meta name="keywords" content="ubuntu," />
 
 
 
@@ -96,18 +96,21 @@
 
 
 
-<meta name="description" content="参考:Hexo+Next主题 文章添加阅读次数，访问量等编辑主题配置文件-config.yml,我用的是next主题,其他主题的我也不知道.需要修改的地方我在行末加注释,编辑后如下123456789101112131415busuanzi_count:  # count values only if the other configs are false  enable: true">
-<meta name="keywords" content="blog,hexo">
+<meta name="description" content="前言安装了双系统（Windows 10 +Ubuntu 16.04）后，Ubuntu自带了一个Gurb，用于选择系统Windows 10 或Ubuntu 16.04）启动。默认10秒没有操作才会自动选择Ubuntu启动，对于很多同学来说，10秒太长了。 设置grub等待时间1sudo vim  /etc/default/grub   打开后是下面这样的找到并修改为1GRUB_TIMEOUT=1">
+<meta name="keywords" content="ubuntu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客next主题添加启用统计阅读次数及访问量">
-<meta property="og:url" content="http://yipingmi.me/hexo博客next主题添加启用统计阅读次数及访问量/index.html">
+<meta property="og:title" content="设置Ubuntu的grub等待时间">
+<meta property="og:url" content="http://yipingmi.me/设置Ubuntu的grub等待时间/index.html">
 <meta property="og:site_name" content="谢文华">
-<meta property="og:description" content="参考:Hexo+Next主题 文章添加阅读次数，访问量等编辑主题配置文件-config.yml,我用的是next主题,其他主题的我也不知道.需要修改的地方我在行末加注释,编辑后如下123456789101112131415busuanzi_count:  # count values only if the other configs are false  enable: true">
+<meta property="og:description" content="前言安装了双系统（Windows 10 +Ubuntu 16.04）后，Ubuntu自带了一个Gurb，用于选择系统Windows 10 或Ubuntu 16.04）启动。默认10秒没有操作才会自动选择Ubuntu启动，对于很多同学来说，10秒太长了。 设置grub等待时间1sudo vim  /etc/default/grub   打开后是下面这样的找到并修改为1GRUB_TIMEOUT=1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-29T11:34:28.714Z">
+<meta property="og:image" content="https://i.loli.net/2017/09/16/59bc84340ffdc.png">
+<meta property="og:image" content="https://i.loli.net/2017/09/16/59bc88f7a039c.png">
+<meta property="og:updated_time" content="2017-09-16T02:18:56.844Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客next主题添加启用统计阅读次数及访问量">
-<meta name="twitter:description" content="参考:Hexo+Next主题 文章添加阅读次数，访问量等编辑主题配置文件-config.yml,我用的是next主题,其他主题的我也不知道.需要修改的地方我在行末加注释,编辑后如下123456789101112131415busuanzi_count:  # count values only if the other configs are false  enable: true">
+<meta name="twitter:title" content="设置Ubuntu的grub等待时间">
+<meta name="twitter:description" content="前言安装了双系统（Windows 10 +Ubuntu 16.04）后，Ubuntu自带了一个Gurb，用于选择系统Windows 10 或Ubuntu 16.04）启动。默认10秒没有操作才会自动选择Ubuntu启动，对于很多同学来说，10秒太长了。 设置grub等待时间1sudo vim  /etc/default/grub   打开后是下面这样的找到并修改为1GRUB_TIMEOUT=1">
+<meta name="twitter:image" content="https://i.loli.net/2017/09/16/59bc84340ffdc.png">
 
 
 
@@ -136,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yipingmi.me/hexo博客next主题添加启用统计阅读次数及访问量/"/>
+  <link rel="canonical" href="http://yipingmi.me/设置Ubuntu的grub等待时间/"/>
 
 
 
 
 
-  <title>hexo博客next主题添加启用统计阅读次数及访问量 | 谢文华</title>
+  <title>设置Ubuntu的grub等待时间 | 谢文华</title>
   
 
 
@@ -279,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yipingmi.me/hexo博客next主题添加启用统计阅读次数及访问量/">
+    <link itemprop="mainEntityOfPage" href="http://yipingmi.me/设置Ubuntu的grub等待时间/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="谢文华">
@@ -296,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo博客next主题添加启用统计阅读次数及访问量</h1>
+          <h1 class="post-title" itemprop="name headline">设置Ubuntu的grub等待时间</h1>
         
 
         <div class="post-meta">
@@ -308,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-29T19:15:54+08:00">
-                2017-08-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T09:51:52+08:00">
+                2017-09-16
               </time>
             
 
@@ -319,28 +322,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -349,9 +330,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexo博客next主题添加启用统计阅读次数及访问量/#comments" itemprop="discussionUrl">
+                <a href="/设置Ubuntu的grub等待时间/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="hexo博客next主题添加启用统计阅读次数及访问量/" itemprop="commentCount"></span>
+                        data-disqus-identifier="设置Ubuntu的grub等待时间/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -384,7 +365,14 @@
       
 
       
-        <p>参考:<a href="https://lannly.github.io/2016/11/11/hexo-next%E4%B8%BB%E9%A2%98-%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E6%AC%A1%E6%95%B0%EF%BC%8C%E8%AE%BF%E9%97%AE%E9%87%8F%E7%AD%89/" target="_blank" rel="external">Hexo+Next主题 文章添加阅读次数，访问量等</a><br>编辑主题配置文件<code>-config.yml</code>,我用的是next主题,其他主题的我也不知道.需要修改的地方我在行末加注释,编辑后如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">busuanzi_count:</div><div class="line">  # count values only if the other configs are false</div><div class="line">  enable: true                                         #&quot;false&quot;改为&quot;true&quot;</div><div class="line">  # custom uv span for the whole site</div><div class="line">  site_uv: true </div><div class="line">  site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; 访问人数   #添加&quot;访问人数&quot;</div><div class="line">  site_uv_footer: </div><div class="line">  # custom pv span for the whole site</div><div class="line">  site_pv: true</div><div class="line">  site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 总访问量    #添加&quot;总访问量&quot;</div><div class="line">  site_pv_footer: 次                                   #添加&quot;次&quot;</div><div class="line">  # custom pv span for one page only</div><div class="line">  page_pv: true</div><div class="line">  page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; 浏览     #添加&quot;浏览&quot;</div><div class="line">  page_pv_footer: 次                                    #添加&quot;次&quot;</div></pre></td></tr></table></figure></p>
+        <ul>
+<li><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1>安装了双系统（Windows 10 +Ubuntu 16.04）后，Ubuntu自带了一个Gurb，用于选择系统Windows 10 或Ubuntu 16.04）启动。默认10秒没有操作才会自动选择Ubuntu启动，对于很多同学来说，10秒太长了。</li>
+<li><h1 id="设置grub等待时间"><a href="#设置grub等待时间" class="headerlink" title="设置grub等待时间"></a>设置grub等待时间</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim  /etc/default/grub</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>打开后是下面这样的<br><img src="https://i.loli.net/2017/09/16/59bc84340ffdc.png" alt="grub_timeout.png"><br>找到并修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GRUB_TIMEOUT=1  #默认是10，可以按照自己的设定，我这里修改为1。</div></pre></td></tr></table></figure></p>
+<p>然后使修改生效<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-grub</div></pre></td></tr></table></figure></p>
+<p> <img src="https://i.loli.net/2017/09/16/59bc88f7a039c.png" alt="update-grub.png"><br> 然后下次开机的时候，留意一下，是不是等待时间已经变了。<br> 搞定！</p>
 
       
     </div>
@@ -431,9 +419,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/blog/" rel="tag"># blog</a>
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
           
         </div>
       
@@ -446,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Hexo博客添加RSS/" rel="next" title="Hexo博客添加RSS">
-                <i class="fa fa-chevron-left"></i> Hexo博客添加RSS
+              <a href="/Ubuntu-重装系统后应该做的事/" rel="next" title="Ubuntu 重装系统后应该做的事">
+                <i class="fa fa-chevron-left"></i> Ubuntu 重装系统后应该做的事
               </a>
             
           </div>
@@ -455,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/hexo-博客常用命令/" rel="prev" title="hexo 博客常用命令">
-                hexo 博客常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -517,8 +499,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/head.png"
@@ -587,6 +578,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置grub等待时间"><span class="nav-number">2.</span> <span class="nav-text">设置grub等待时间</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -761,9 +768,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yipingmi.me/hexo博客next主题添加启用统计阅读次数及访问量/';
-          this.page.identifier = 'hexo博客next主题添加启用统计阅读次数及访问量/';
-          this.page.title = 'hexo博客next主题添加启用统计阅读次数及访问量';
+          this.page.url = 'http://yipingmi.me/设置Ubuntu的grub等待时间/';
+          this.page.identifier = '设置Ubuntu的grub等待时间/';
+          this.page.title = '设置Ubuntu的grub等待时间';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://xiewenhua.disqus.com/embed.js';
