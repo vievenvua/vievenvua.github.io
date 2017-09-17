@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yipingmi.me/"/>
-  <updated>2017-09-16T06:05:51.838Z</updated>
+  <updated>2017-09-17T14:54:52.700Z</updated>
   <id>http://yipingmi.me/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu鼠标中键(滚轮)的神奇功能</title>
+    <link href="http://yipingmi.me/Ubuntu%E9%BC%A0%E6%A0%87%E4%B8%AD%E9%94%AE%E7%9A%84%E7%A5%9E%E5%A5%87%E5%8A%9F%E8%83%BD/"/>
+    <id>http://yipingmi.me/Ubuntu鼠标中键的神奇功能/</id>
+    <published>2017-09-17T14:32:40.000Z</published>
+    <updated>2017-09-17T14:54:52.700Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1>1.选择一段文本，<mark>不必复制（Crtl+C）</mark><br>2.在文本编辑的地方按鼠标中键（滚轮），即可以把选择的文本粘贴上去</li>
+<li><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1>目前我只知道这个技巧在Ubuntu上可以通用。Mac上的我在舍友的Mac mini试了一下，不行。Windows上的<mark>Git bash</mark>好像也可以实现这个功能吧（不确定是粘贴剪切板文字还是粘贴选择的文本）！真的是一个超级贴心的设计，自从发现了这个小技巧后，我几乎很不用<mark>Crtl+C</mark>了。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h1&gt;1.选择一段文本，&lt;mark&gt;不必复制（Crtl+C）&lt;/mark&gt;&lt;br&gt;2.在文本编辑的地方按鼠标中键（滚轮），即可以把选择
+    
+    </summary>
+    
+    
+      <category term="ubuntu" scheme="http://yipingmi.me/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>解决Ubuntu下hexo无法完成部署卡住不弹出github</title>
@@ -176,9 +201,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
   </entry>
   
@@ -201,9 +226,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
   </entry>
   
@@ -232,9 +257,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
   </entry>
   
@@ -283,9 +308,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
   </entry>
   
@@ -363,9 +388,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
       <category term="markdown" scheme="http://yipingmi.me/tags/markdown/"/>
     
@@ -398,9 +423,9 @@
       <category term="博客" scheme="http://yipingmi.me/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
-    
       <category term="hexo" scheme="http://yipingmi.me/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yipingmi.me/tags/blog/"/>
     
   </entry>
   
