@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，里面包括三个.exe文件:debug.exe,link.ex">
+<meta name="description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，一般里面会包括三个.exe文件:debug.exe,link">
 <meta name="keywords" content="ubuntu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 下汇编环境的配置">
 <meta property="og:url" content="http://yipingmi.me/Ubuntu-下汇编环境的配置/index.html">
 <meta property="og:site_name" content="谢文华">
-<meta property="og:description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，里面包括三个.exe文件:debug.exe,link.ex">
+<meta property="og:description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，一般里面会包括三个.exe文件:debug.exe,link">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-30T13:05:41.007Z">
+<meta property="og:updated_time" content="2017-10-30T14:45:22.082Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 下汇编环境的配置">
-<meta name="twitter:description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，里面包括三个.exe文件:debug.exe,link.ex">
+<meta name="twitter:description" content="前言发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友 配置 （仅限于Ubuntu 下的）1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入debug开始。。。(不知道怎么说，脑补。。)2.下载 masm这个文件我是网上找的，一般里面会包括三个.exe文件:debug.exe,link">
 
 
 
@@ -363,7 +363,7 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>发现学习一门编程语言的第一道槛就是配置环境，所以将自己完整的配置分享出来，希望可以帮助到像我一样的网友</p>
-<h1 id="配置-（仅限于Ubuntu-下的）"><a href="#配置-（仅限于Ubuntu-下的）" class="headerlink" title="配置 （仅限于Ubuntu 下的）"></a>配置 <mark>（仅限于Ubuntu 下的）</mark></h1><p>1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入<code>debug</code>开始。。。(不知道怎么说，脑补。。)<br>2.下载 masm<br>这个文件我是网上找的，里面包括三个.exe文件:<code>debug.exe</code>,<code>link.exe</code>,<code>masm.exe</code>，下载后建议把三个文件直接（不带文件夹）放到虚拟C盘下，也就是ubuntu 实体机的<code>~/.dosemu/drives/c</code>目录下，这样的好处是不用每次编译的时候都敲很长的路径。完成这一步，汇编的环境就配置好了，终于可以开始好好学习了。</p>
+<h1 id="配置-（仅限于Ubuntu-下的）"><a href="#配置-（仅限于Ubuntu-下的）" class="headerlink" title="配置 （仅限于Ubuntu 下的）"></a>配置 <mark>（仅限于Ubuntu 下的）</mark></h1><p>1.sudo apt-get install dosemu #这个时候已经可以打开dosemu程序，并且可以输入<code>debug</code>开始。。。(不知道怎么说，脑补。。)<br>2.下载 masm<br>这个文件我是网上找的，一般里面会包括三个.exe文件:<code>debug.exe</code>,<code>link.exe</code>,<code>masm.exe</code>，下载后建议把<code>link.exe</code>和<code>masm.exe</code>(<mark>不要<code>debug.exe</code></mark>)直接（不带文件夹）放到虚拟C盘下，也就是ubuntu 实体机的<code>~/.dosemu/drives/c</code>目录下，这样的好处是不用每次编译的时候都敲很长的路径。完成这一步，汇编的环境就配置好了，终于可以开始好好学习了。</p>
 <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>安装好 dosemu 后，默认是<code>C:\</code>,这个路径对应实体机的<code>~/.dosemu/drives/c</code>。</p>
 
       
